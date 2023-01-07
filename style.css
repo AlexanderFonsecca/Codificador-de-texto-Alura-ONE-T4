@@ -1,0 +1,208 @@
+body {
+    background:#C6E2FF;
+    font-family:  sans-serif;
+}
+
+header {
+    display: flex;
+    padding: 2% 4%;
+    background: #1E90FF;    
+}
+
+h1 {
+    display: flex;
+    color:#FFFFFF;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    margin: auto;
+}
+
+.caixa {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 940px;
+    margin: 11px 17%;
+}
+
+.principal {
+    flex-grow: 2;
+}
+
+#entrada {
+    font-size: 22px;
+    color: #000000;
+    height: 400px;
+    width: 90%;
+    background: #FFFFFF;
+    border: 1px solid #1E90FF;
+    border-radius: 10px;
+    resize: none;
+}
+
+#entrada:focus {
+    border: 3px solid #1E90FF;
+    box-shadow: 0 0 0 0;
+    outline: 0;
+}
+
+
+#saida {
+    font-size: 20px;
+    color: #000000;
+    background:#FFFFFF;
+    resize:none;
+    height: 85%;
+    width: 80%;
+}
+
+.resultado {
+    flex-grow: 1;
+}
+
+#resultado {
+    background: #BFEFFF;
+    border-radius: 10px;
+    padding: 20px ;
+    box-sizing: border-box;
+    box-shadow: 2px 2px 2px 2px #1E90FF;
+    text-align: center;
+    line-height: 40px;
+    
+}
+
+#resultado img {
+    max-width: 400px;
+    padding-top: 10%;
+}
+
+#resultado h2 {
+    font-size: 20px;
+    padding: 20px;
+    font-weight: bold;
+}
+
+.aviso {
+    font-size: 14px;
+    padding-top: 20px;
+    color: #000000;
+}
+
+.aviso img {
+    vertical-align:text-bottom;
+    margin-right: 5px;
+}
+
+.botoes {
+    padding: 20px 0px;
+    display: block;
+}
+
+#criptografar, #descriptografar{
+    font-size: 20px;
+    border-radius: 10px;
+    padding: 11px;
+    min-width: 160px;
+    border: 2px solid #000000;
+}
+
+#criptografar {
+    margin-right: 20px;
+    background: #0000FF;
+    color: #FFFFFF;
+}
+
+#descriptografar {
+    background: #F3F5FC;
+}
+
+ #copiar {
+    background: #0000FF;
+    font-size: 20px;
+    color: #FFFFFF;
+    border-radius: 10px;
+    padding: 11px;
+    min-width: 160px;
+    border: 2px solid #000000;
+
+ }
+
+#criptografar:hover {
+    cursor: pointer;
+    background: #00CD00;
+    color: #FFFFFF;
+}
+
+#descriptografar:hover {
+    cursor: pointer;
+    background: #CFCFCF;
+    color: #000000;
+
+}
+
+#copiar:hover {
+    cursor: pointer;
+    background: #FF0000;
+    color: #FFFFFF;
+
+}
+
+.rodape {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+    background:#1E90FF;
+    margin-top: 50px;
+}
+
+.social, .copyright {
+    text-align: center;
+}
+
+.social {
+    margin-bottom: 10px;
+}
+
+.social i, .copyright {
+    color: #FFFFFF;
+}
+
+.social i {
+    font-size: 22px;
+    padding: 5px;
+}
+
+.social i:hover {
+    color: #052051;
+}
+
+.copyright {
+    font-size: 13px;
+}
+
+@media (max-width: 981px) {
+    header {
+        display: flex;
+        padding: 3% 6%;
+    }
+
+    .caixa {
+        width: 90%;
+    }
+
+    .principal {
+        width: 100%;
+    }
+
+    #saida {
+        min-height: 200px;
+    }
+
+    #resultado img {
+        padding: 0;
+    }
+}
